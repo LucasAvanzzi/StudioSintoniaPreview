@@ -1,8 +1,8 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Bem-Vindo ao Studio Sintonia";
 }
-
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<div class="text-center"/>
+    <h1>@ViewData["Title"]</h1>
+    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+    <a class=" btn btn-primary" role="button" asp-controller="Usuario" asp-action="CadastrarUsuario">Adicionar Novo Usuário</a>
+    </div>

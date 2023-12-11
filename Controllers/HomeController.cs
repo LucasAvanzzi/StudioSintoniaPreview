@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using StudioSintoniaPreview.Models;
+using StudioSintoniaPreview.Repositorio;
 using System.Diagnostics;
 
 namespace StudioSintoniaPreview.Controllers
@@ -7,7 +8,6 @@ namespace StudioSintoniaPreview.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
@@ -17,12 +17,6 @@ namespace StudioSintoniaPreview.Controllers
         {
             return View();
         }
-
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

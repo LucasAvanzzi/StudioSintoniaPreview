@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using StudioSintoniaPreview.Data;
+using StudioSintoniaPreview.Repositorio;
 
 namespace StudioSintoniaPreview
 {
@@ -16,6 +17,7 @@ namespace StudioSintoniaPreview
             .AddDbContext<BancoContext>(
              o => o.UseSqlServer(builder.Configuration.GetConnectionString("DataBase"))
              );
+            builder.Services.AddScoped<IUsuarioRepositorio, UsuarioRepositorio>();
 
             var app = builder.Build();
 
