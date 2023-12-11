@@ -1,0 +1,36 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+    margin: 0;
+}
+
+.profile-container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    border: 1px solid #e1e1e1;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.profile-info {
+    flex-grow: 1;
+}
+
+    .profile-info h1 {
+        margin: 0;
+    }
+
+.post-count {
+    font-size: 14px;
+    color: #999;
+}
