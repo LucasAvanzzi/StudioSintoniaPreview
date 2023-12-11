@@ -15,7 +15,8 @@ namespace StudioSintoniaPreview.Controllers
         public IActionResult Criar(UsuarioModel usuario)
         {
             _usuarioRepositorio.Adicionar(usuario);
-            return RedirectToAction("Index");
+            return RedirectToAction("Home");
+
         }
         public IActionResult CadastrarUsuario() 
         {
